@@ -1,0 +1,24 @@
+{
+  "name": "tixapp",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.1.0",
+    "nuxt": "^4.2.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/basil": "^1.2.4",
+    "@iconify-json/iconoir": "^1.2.10",
+    "@iconify-json/qlementine-icons": "^1.2.11",
+    "@iconify-json/stash": "^1.2.4"
+  }
+}

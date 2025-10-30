@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-text: var(--ui-color-neutral-600);
+}
+
+.dark {
+  --ui-text: var(--color-white);
+}
+
+.text-title {
+  @apply text-4xl text-black font-semibold;
+}
+
+.text-subtitle {
+  @apply text-xl text-black font-semibold;
+}
+
+body {
+  font-family: var(--font-geist);
+  font-size: var(--font-size-base);
+}
+
+@theme {
+  --font-geist: "Geist", sans-serif;
+  --font-size-base: 16px;
+}
+
+@theme static {
+  --color-gossamer: #03af67;
+  --color-gossamer-50: #6dfcc0;
+  --color-gossamer-100: #59fcb8;
+  --color-gossamer-200: #31fba7;
+  --color-gossamer-300: #09fb95;
+  --color-gossamer-400: #04d77f;
+  --color-gossamer-500: #03af67;
+  --color-gossamer-600: #027847;
+  --color-gossamer-700: #014126;
+  --color-gossamer-800: #000a06;
+  --color-gossamer-900: #000000;
+  --color-gossamer-950: #000000;
+
+  --color-deep-sea-green: oklch(41.105% 0.0713 182.68);
+  --color-deep-sea-green-50: oklch(85.962% 0.14883 182.47);
+  --color-deep-sea-green-100: oklch(85.482% 0.15193 181.59);
+  --color-deep-sea-green-200: oklch(75.341% 0.13366 181.79);
+  --color-deep-sea-green-300: oklch(64.267% 0.11364 181.92);
+  --color-deep-sea-green-400: oklch(53.009% 0.09301 182.18);
+  --color-deep-sea-green-500: oklch(41.105% 0.0713 182.68);
+  --color-deep-sea-green-600: oklch(23.113% 0.03892 183.46);
+  --color-deep-sea-green-700: oklch(0% 0 none);
+  --color-deep-sea-green-800: oklch(0% 0 none);
+  --color-deep-sea-green-900: oklch(0% 0 none);
+  --color-deep-sea-green-950: oklch(0% 0 none);
+}

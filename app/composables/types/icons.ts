@@ -1,0 +1,10 @@
+export const RIGHT_ARROW_ICON = "cuida:arrow-right-outline";
+export const EVENT_ICON = "ic:outline-event-note";
+export const DATE_ICON = "hugeicons:date-time";
+export const ARTIST_ICON = "ep:mic";
+export const TICKET_ICON = "icon-park-outline:ticket-one";
+export const CLOSE_ICON = "iconamoon:close-light";
+export const CHECK_ICON = "heroicons-outline:check";
+export const LAB_ICON = "hugeicons:test-tube-01";
+export const TIME_ICON = "icon-park-outline:time";
+export const LOCATION_ICON = "weui:location-outlined";
