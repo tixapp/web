@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-pink-50">
     <app-header />
     <slot />
     <app-footer />

@@ -103,18 +103,3 @@ onMounted(() => {
   });
 });
 </script>
-
-<style scoped>
-/* Animate chat messages appearing bottom-up */
-.chat-enter-active {
-  transition: all 0.5s ease;
-}
-.chat-enter-from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-.chat-enter-to {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>

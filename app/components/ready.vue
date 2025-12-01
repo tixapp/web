@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div
       class="container p-14 mx-auto flex flex-col justify-center items-center space-y-4"
     >

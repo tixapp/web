@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="">
     <div class="container mx-auto p-14">
       <div>
         <div class="flex justify-between">
