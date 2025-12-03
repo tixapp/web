@@ -1,5 +1,5 @@
 export const RIGHT_ARROW_ICON = "cuida:arrow-right-outline";
-export const EVENT_ICON = "ic:outline-event-note";
+export const EVENT_ICON = "ep:location";
 export const DATE_ICON = "hugeicons:date-time";
 export const ARTIST_ICON = "ep:mic";
 export const TICKET_ICON = "icon-park-outline:ticket-one";

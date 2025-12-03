@@ -17,7 +17,7 @@
         <ul class="hidden md:flex items-center space-x-6 text-gray-700">
           <li><nuxt-link to="#" class="hover:text-gray-900">Features</nuxt-link></li>
           <li><nuxt-link to="#" class="hover:text-gray-900">How it Works</nuxt-link></li>
-          <li><nuxt-link to="#" class="hover:text-gray-900">Events</nuxt-link></li>
+          <li><nuxt-link to="event" class="hover:text-gray-900">Events</nuxt-link></li>
           <li><nuxt-link to="pricing" class="hover:text-gray-900">Pricing</nuxt-link></li>
         </ul>
 

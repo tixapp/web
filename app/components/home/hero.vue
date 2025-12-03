@@ -47,12 +47,6 @@
 </template>
 
 <style scoped>
-/* MAIN HERO ANIMATION */
-.hero-animate {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.9s ease-out forwards;
-}
 
 @keyframes fadeUp {
   to {

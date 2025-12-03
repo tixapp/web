@@ -89,9 +89,9 @@
                   </div>
                 </div>
 
-                  <!-- Image -->
-                <div class="hidden md:block mt-4 w-full h-[300px]">
-                  <img src="/2.png" class="rounded-b-3xl" alt="">
+                <!-- Image -->
+                <div class="hidden md:block mt-4 w-full">
+                  <img src="/2.png" class="rounded-b-3xl h-[300px] object-fill w-full" alt="">
                 </div>
 
               </div>
@@ -280,8 +280,13 @@
     </div>
     <home-popular-events />
     <!-- FAQ -->
-    <div class="py-28 bg-white">
-      <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+    <div class="py-20 bg-white">
+      <div class="flex flex-col justify-center items-center  mb-10">
+        <p class="text-[#7008E7] bg-[#F5F3FF] border rounded-3xl p-1 px-3 border-[#DDD6FF] mb-2">AFQ</p>
+        <h2 class="text-3xl font-bold  mb-4">Frequently Asked Questions</h2>
+        <P>everything you need to know about TixApp</P>
+      </div>
+
 
       <div class="max-w-3xl mx-auto space-y-6">
         <details class="p-5 border rounded-xl bg-pink-50">
@@ -345,10 +350,8 @@
             WhatsApp. You'll receive confirmation instantly!
           </p>
         </details>
-
       </div>
     </div>
-    <ready />
   </div>
 </template>
 <script setup lang="ts">
