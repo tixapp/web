@@ -16,12 +16,12 @@
         </div>
 
         <div class="flex space-x-4">
-          <button class="bg-white text-gray-900 font-medium py-3 px-6 rounded-full shadow">
+          <u-button class="bg-white border border-gray-500 text-gray-900 font-medium py-3 px-6 rounded-full shadow">
             Get Started
-          </button>
-          <button class="bg-white/30 border border-white text-white font-medium py-3 px-6 rounded-full">
+          </u-button> 
+          <u-button class="bg-white border border-gray-500 text-gray-900  font-medium py-3 px-6 rounded-full">
             Book a demo
-          </button>
+          </u-button>
         </div>
       </div>
 

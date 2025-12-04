@@ -3,7 +3,6 @@
     <!-- Hero -->
     <home-hero />
     <home-partenar />
-    <!-- Built For -->
     <section class="py-24 bg-linear-to-b from-white to-pink-50">
       <div class="container mx-auto px-6 lg:px-14">
 
@@ -15,133 +14,138 @@
 
         <!-- Cards -->
         <div class="space-y-6">
-          <!-- Large Card -->
+
+          <!-- Event Organizers -->
           <div
             class="rounded-3xl border border-white/50 bg-white/80 backdrop-blur-xl shadow-[0_8px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
             <div class="flex items-start justify-between gap-8">
 
-              <!-- Left Section -->
-              <div class="flex-1 p-8 ">
-                <!-- Icon -->
-                <div
-                  class="w-16 h-16 rounded-2xl bg-linear-to-br from-pink-500 to-pink-50/70 flex items-center justify-center shadow-md">
-                  <u-icon :name="EVENT_ICON" class="text-4xl text-white" />
-                </div>
-
+              <div class="flex-1 p-8">
                 <div class="mt-6 space-y-4">
                   <p class="text-xl font-semibold text-gray-900">Event Organizers</p>
                   <p class="text-gray-600 leading-relaxed">
-                    Create, manage, and track your events without stress.
+                    Manage events, track sales, and engage with attendees all in one place
                   </p>
 
                   <ul class="space-y-2 text-gray-700">
                     <li class="flex items-center gap-2">
-                      <dot /><span>Live dashboards</span>
+                      <div class="bg-pink-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:monitor-dashboard" class="w-5 h-5 text-pink-500" />
+                      </div>
+                      <span>Live dashboards</span>
                     </li>
                     <li class="flex items-center gap-2">
-                      <dot /><span>Instant alerts</span>
+                      <div class="bg-pink-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:bell-alert-outline" class="w-5 h-5 text-pink-500" />
+                      </div>
+
+                      <span>Instant alerts</span>
                     </li>
                     <li class="flex items-center gap-2">
-                      <dot /><span>Automated earnings</span>
+                      <div class="bg-pink-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:currency-usd" class="w-5 h-5 text-pink-500" />
+                      </div>
+                      <span>Automated earnings</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <!-- Right Image -->
               <div class="hidden md:block w-1/2">
-                <img src="/1.png" class="w-full h-auto" alt="">
+                <img src="/1.png" class="w-full h-auto" alt="Event Organizers" />
               </div>
-
             </div>
           </div>
 
-          <!-- Bottom Grid -->
+          <!-- Artists & Creatives -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <!-- Card -->
             <div
               class="rounded-3xl border border-white/50 bg-white/80 backdrop-blur-xl shadow-[0_8px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
-              <div class="">
-                <!-- Left -->
-                <div class="flex-1 p-8 ">
-                  <div
-                    class="w-16 h-16 rounded-2xl bg-linear-to-br  from-pink-500 to-pink-50/70  flex items-center justify-center shadow-md">
-                    <u-icon :name="ARTIST_ICON" class="text-4xl text-white" />
-                  </div>
+              <div class="flex-1 p-8">
+                <div class="mt-6 space-y-4">
+                  <p class="text-xl font-semibold text-gray-900">Artists & Creatives</p>
+                  <p class="text-gray-600 leading-relaxed">
+                    Grow your audience while we handle the operations.
+                  </p>
 
-                  <div class="mt-6 space-y-4">
-                    <p class="text-xl font-semibold text-gray-900">Artists & Creatives</p>
-                    <p class="text-gray-600 leading-relaxed">
-                      Grow your audience while we handle the operations.
-                    </p>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-center gap-2">
+                      <div class="bg-blue-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:account-multiple" class="w-5 h-5 text-blue-500" />
+                      </div>
 
-                    <ul class="space-y-2 text-gray-700">
-                      <li class="flex items-center gap-2">
-                        <dot /><span>Direct fan connection</span>
-                      </li>
-                      <li class="flex items-center gap-2">
-                        <dot /><span>Built-in promotion</span>
-                      </li>
-                      <li class="flex items-center gap-2">
-                        <dot /><span>Performance analytics</span>
-                      </li>
-                    </ul>
-                  </div>
+                      <span>Direct fan connection</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <div class="bg-blue-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:bullhorn" class="w-5 h-5 text-blue-500" />
+                      </div>
+
+                      <span>Built-in promotion</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <div class="bg-blue-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:chart-pie" class="w-5 h-5 text-blue-500" />
+                      </div>
+                      <span>Performance analytics</span>
+                    </li>
+                  </ul>
                 </div>
+              </div>
 
-                <!-- Image -->
-                <div class="hidden md:block mt-4 w-full">
-                  <img src="/2.png" class="rounded-b-3xl h-[300px] object-fill w-full" alt="">
-                </div>
-
+              <div class="hidden md:block mt-4 w-full">
+                <img src="/2.png" class="rounded-b-3xl h-[300px] object-fill w-full" alt="Artists & Creatives" />
               </div>
             </div>
 
-            <!-- Card -->
+            <!-- Ticket Buyers -->
             <div
               class="rounded-3xl border border-white/50 bg-white/80 backdrop-blur-xl shadow-[0_8px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
-              <div class="">
+              <div class="flex-1 p-8">
+                <div class="mt-6 space-y-4">
+                  <p class="text-xl font-semibold text-gray-900">Ticket Buyers</p>
+                  <p class="text-gray-600 leading-relaxed">
+                    Find, book, and enjoy events with zero friction.
+                  </p>
 
-                <!-- Left -->
-                <div class="flex-1 p-8">
-                  <div
-                    class="w-16 h-16 rounded-2xl bg-linear-to-br  from-pink-500 to-pink-50/70 flex items-center justify-center shadow-md">
-                    <u-icon :name="TICKET_ICON" class="text-4xl text-white" />
-                  </div>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-center gap-2">
+                      <div class="bg-green-200  p-2 rounded-xl flex items-center justify-center">
 
-                  <div class="mt-6 space-y-4">
-                    <p class="text-xl font-semibold text-gray-900">Ticket Buyers</p>
-                    <p class="text-gray-600 leading-relaxed">
-                      Find, book, and enjoy events with zero friction.
-                    </p>
+                        <u-icon name="mdi:ticket-confirmation-outline" class="w-5 h-5 text-green-600" />
+                      </div>
 
-                    <ul class="space-y-2 text-gray-700">
-                      <li class="flex items-center gap-2">
-                        <dot /><span>Instant confirmation</span>
-                      </li>
-                      <li class="flex items-center gap-2">
-                        <dot /><span>Automatic reminders</span>
-                      </li>
-                      <li class="flex items-center gap-2">
-                        <dot /><span>Secure digital tickets</span>
-                      </li>
-                    </ul>
-                  </div>
+                      <span>Instant confirmation</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <div class="bg-green-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:bell-ring-outline" class="w-5 h-5 text-green-600" />
+                      </div>
+
+                      <span>Automatic reminders</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <div class="bg-green-200  p-2 rounded-xl flex items-center justify-center">
+                        <u-icon name="mdi:lock-outline" class="w-5 h-5 text-green-600" />
+                      </div>
+
+
+                      <span>Secure digital tickets</span>
+                    </li>
+                  </ul>
                 </div>
+              </div>
 
-                <!-- Image -->
-                <div class="hidden md:block mt-4 w-full h-full">
-                  <img src="/3.png" class="rounded-b-3xl " alt="">
-                </div>
-
+              <div class="hidden md:block mt-4 w-full h-full">
+                <img src="/3.png" class="rounded-b-3xl" alt="Ticket Buyers" />
               </div>
             </div>
-
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
+
 
 
     <div class="bg-white">

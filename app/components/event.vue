@@ -12,8 +12,8 @@
 
       <!-- Top-right action buttons -->
       <div class="absolute top-3 right-3 flex space-x-2 z-20">
-        <div class="p-2.5 bg-white rounded-full shadow flex items-center justify-center">
-          <u-icon name="solar:bookmark-outline" class="text-gray-700" />
+        <div class="p-2.5 bg-blue-500 rounded-full shadow flex items-center justify-center">
+          <u-icon name="solar:bookmark-outline" class="text-white" />
         </div>
         <div class="p-2.5 bg-white rounded-full shadow flex items-center justify-center">
           <u-icon name="material-symbols:favorite-outline" class="text-red-500" />

@@ -2,17 +2,19 @@
   <div>
 
     <!-- HERO -->
-    <section class="bg-gray-50 py-20 border-b">
-      <div class="container mx-auto px-6 lg:px-14">
+    <section class="py-20">
+      <div class="container mx-auto px-6 lg:p-14 flex flex-col items-center text-center">
+
         <h1 class="text-4xl lg:text-5xl font-bold tracking-tight">
           Discover Events Happening Near You
         </h1>
+
         <p class="text-gray-600 mt-3 max-w-xl">
           From concerts to conferences — explore, book, and enjoy the best events around you.
         </p>
 
-        <!-- Search & Filter Row -->
-        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+        <!-- Search Row -->
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-2xl">
           <input
             v-model="search"
             type="text"
@@ -25,7 +27,11 @@
             class="h-12 px-4 border rounded-lg"
           >
             <option value="">All Categories</option>
-            <option v-for="cat in categories" :key="cat" :value="cat">
+            <option 
+              v-for="cat in categories" 
+              :key="cat" 
+              :value="cat"
+            >
               {{ cat }}
             </option>
           </select>
@@ -34,6 +40,7 @@
             Search
           </u-button>
         </div>
+
       </div>
     </section>
 
@@ -50,10 +57,7 @@
         </div>
 
         <!-- Grid -->
-        <div
-          class="mt-12 grid gap-10 
-          grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-        >
+        <div class="mt-12 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <event
             v-for="row in filteredEvents"
             :key="row.id"
@@ -62,7 +66,10 @@
         </div>
 
         <!-- No results -->
-        <div v-if="filteredEvents.length === 0" class="text-center py-20 text-gray-500">
+        <div 
+          v-if="filteredEvents.length === 0" 
+          class="text-center py-20 text-gray-500"
+        >
           No events found. Try a different search or category.
         </div>
 
@@ -73,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const search = ref('')
 const category = ref('')
@@ -166,9 +173,9 @@ const events: Ticket[] = [
 ]
 
 const filteredEvents = computed(() => {
-  return events.filter(e => {
+  return events.filter((e) => {
     const matchesSearch = e.name.toLowerCase().includes(search.value.toLowerCase())
-    const matchesCategory = category.value === "" || e.category === category.value
+    const matchesCategory = !category.value || e.category === category.value
     return matchesSearch && matchesCategory
   })
 })
