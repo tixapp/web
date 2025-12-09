@@ -1,21 +1,34 @@
 <template>
-  <div class="">
-    <div class="container mx-auto p-14">
-      <div>
-        <div class="flex justify-between">
+  <div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-14 py-10">
+      
+      <!-- Header -->
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div>
           <p class="text-title">Popular Events</p>
-          <u-button variant="outline" color="neutral">View All Events</u-button>
+          <p class="mt-1 text-gray-600 text-sm sm:text-base">
+            Discover amazing events near you. Book tickets instantly via WhatsApp
+          </p>
         </div>
-        <p class="mt-1">
-          Discover amazing events near you. Book tickets instantly via WhatsApp
-        </p>
+
+        <u-button 
+          variant="outline" 
+          color="neutral"
+          class="w-full sm:w-auto"
+        >
+          View All Events
+        </u-button>
       </div>
-      <div class="grid grid-cols-3 gap-8 mt-10">
-        <event :data="row" v-for="row in events"/>
+
+      <!-- Events Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <event :data="row" v-for="row in events" :key="row.id" />
       </div>
+
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
 const events: Ticket[] = [
   {

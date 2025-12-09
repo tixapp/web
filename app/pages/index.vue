@@ -148,140 +148,144 @@
 
 
 
-    <div class="bg-white">
+  <template>
+  <div class="bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-14 py-16">
 
-      <div class="container mx-auto p-14 py-16">
-        <div class="space-y-4 text-center mb-10">
-          <p class="text-4xl text-black font-semibold">Ticketing Simplified</p>
-          <p>
-            Stop losing sales to complicated checkout flows. Meet your customers
-            where they already spend their time.
-          </p>
-        </div>
-        <div class="grid grid-cols-2 gap-8">
-          <div class="border-2 rounded-xl p-8 bg-red-50 border-red-300">
-            <div class="flex space-x-3 items-center">
-              <div class="w-10 flex justify-center items-center h-10 rounded-xl bg-red-500">
-                <u-icon class="text-2xl text-white" :name="CLOSE_ICON" />
-              </div>
-              <p class="text-2xl font-semibold text-black">The Problem</p>
+      <!-- Header -->
+      <div class="space-y-3 text-center mb-10 px-2">
+        <p class="text-2xl sm:text-3xl lg:text-4xl text-black font-semibold">
+          Ticketing Simplified
+        </p>
+        <p class="text-gray-600 text-sm sm:text-base">
+          Stop losing sales to complicated checkout flows. Meet your customers
+          where they already spend their time.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- The Problem -->
+        <div class="border-2 rounded-xl p-6 sm:p-8 bg-red-50 border-red-300">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 flex justify-center items-center rounded-xl bg-red-500">
+              <u-icon class="text-2xl text-white" :name="CLOSE_ICON" />
             </div>
-            <ul class="mt-8 space-y-5">
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">Fragmented Systems</p>
-                  <p class="text-sm">
-                    Multiple platforms, confusing flows, and abandoned carts
-                  </p>
-                </div>
-              </li>
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">Poor Attendee Experience</p>
-                  <p class="text-sm">
-                    Long queues, lost tickets, and frustrated customers
-                  </p>
-                </div>
-              </li>
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">No Real-Time Tracking</p>
-                  <p class="text-sm">
-                    Can't see what's selling or adjust on the fly
-                  </p>
-                </div>
-              </li>
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">Limited Reach</p>
-                  <p class="text-sm">
-                    Missing out on customers who prefer mobile-first solutions
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <div class="bg-white rounded-xl p-5 text-center mt-10">
-              <p>Traditional ticketing losing customers</p>
-            </div>
+            <p class="text-xl sm:text-2xl font-semibold text-black">The Problem</p>
           </div>
-          <div class="border-2 rounded-xl p-8 bg-green-50 border-green-500">
-            <div class="flex space-x-3 items-center">
-              <div class="w-10 flex justify-center items-center h-10 rounded-xl bg-green-500">
-                <u-icon class="text-2xl text-white" :name="CHECK_ICON" />
+
+          <ul class="mt-8 space-y-5">
+            <li class="flex space-x-3">
+              <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
+              <div>
+                <p class="text-black font-semibold">Fragmented Systems</p>
+                <p class="text-sm text-gray-600">
+                  Multiple platforms, confusing flows, and abandoned carts
+                </p>
               </div>
-              <p class="text-2xl font-semibold text-black">Our Solution</p>
-            </div>
-            <ul class="mt-8 space-y-5">
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">
-                    WhatsApp & USSD Ticketing
-                  </p>
-                  <p class="text-sm">
-                    Multiple platforms, confusing flows, and abandoned carts
-                  </p>
-                </div>
-              </li>
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">
-                    Instant Alerts & Confirmations
-                  </p>
-                  <p class="text-sm">
-                    Long queues, lost tickets, and frustrated customers
-                  </p>
-                </div>
-              </li>
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">Real-Time Dashboard</p>
-                  <p class="text-sm">
-                    Can't see what's selling or adjust on the fly
-                  </p>
-                </div>
-              </li>
-              <li class="flex space-x-2">
-                <div>
-                  <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
-                </div>
-                <div>
-                  <p class="text-black font-semibold">Powerful Analytics</p>
-                  <p class="text-sm">
-                    Understand your audience and optimize your events
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <div class="bg-white rounded-xl p-5 text-center mt-10">
-              <p class="text-green-400">
-                Seamless ticketing on WhatsApp, USSD & Web
-              </p>
-            </div>
+            </li>
+
+            <li class="flex space-x-3">
+              <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
+              <div>
+                <p class="text-black font-semibold">Poor Attendee Experience</p>
+                <p class="text-sm text-gray-600">
+                  Long queues, lost tickets, and frustrated customers
+                </p>
+              </div>
+            </li>
+
+            <li class="flex space-x-3">
+              <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
+              <div>
+                <p class="text-black font-semibold">No Real-Time Tracking</p>
+                <p class="text-sm text-gray-600">
+                  Can't see what's selling or adjust on the fly
+                </p>
+              </div>
+            </li>
+
+            <li class="flex space-x-3">
+              <u-icon class="text-red-500 text-2xl" :name="CLOSE_ICON" />
+              <div>
+                <p class="text-black font-semibold">Limited Reach</p>
+                <p class="text-sm text-gray-600">
+                  Missing out on mobile-first customers
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="bg-white rounded-xl p-5 text-center mt-10">
+            <p class="text-gray-700">Traditional ticketing losing customers</p>
           </div>
         </div>
+
+        <!-- The Solution -->
+        <div class="border-2 rounded-xl p-6 sm:p-8 bg-green-50 border-green-500">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 flex justify-center items-center rounded-xl bg-green-500">
+              <u-icon class="text-2xl text-white" :name="CHECK_ICON" />
+            </div>
+            <p class="text-xl sm:text-2xl font-semibold text-black">Our Solution</p>
+          </div>
+
+          <ul class="mt-8 space-y-5">
+            <li class="flex space-x-3">
+              <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
+              <div>
+                <p class="text-black font-semibold">WhatsApp & USSD Ticketing</p>
+                <p class="text-sm text-gray-600">
+                  Sell tickets anywhere without complicated flows
+                </p>
+              </div>
+            </li>
+
+            <li class="flex space-x-3">
+              <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
+              <div>
+                <p class="text-black font-semibold">Instant Alerts & Confirmations</p>
+                <p class="text-sm text-gray-600">
+                  Real-time updates for both organizers and attendees
+                </p>
+              </div>
+            </li>
+
+            <li class="flex space-x-3">
+              <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
+              <div>
+                <p class="text-black font-semibold">Real-Time Dashboard</p>
+                <p class="text-sm text-gray-600">
+                  Track ticket sales as they happen
+                </p>
+              </div>
+            </li>
+
+            <li class="flex space-x-3">
+              <u-icon class="text-green-500 text-2xl" :name="CHECK_ICON" />
+              <div>
+                <p class="text-black font-semibold">Powerful Analytics</p>
+                <p class="text-sm text-gray-600">
+                  Understand your audience and optimize your events
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="bg-white rounded-xl p-5 text-center mt-10">
+            <p class="text-green-500 font-medium">
+              Seamless ticketing on WhatsApp, USSD & Web
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
+</template>
+
+
     <home-popular-events />
     <!-- FAQ -->
     <div class="py-20 bg-white">

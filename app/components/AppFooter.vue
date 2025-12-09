@@ -1,32 +1,38 @@
 <template>
-  <footer class="bg-[#DCF8C6] pb-16 px-16">
+  <footer class="bg-[#DCF8C6] pb-16 px-4 sm:px-10 lg:px-16">
     <div class="bg-white container mx-auto px-6 lg:px-14 py-14 rounded-b-3xl">
 
       <!-- CTA Box -->
       <div
-        class="bg-[#7ECF82] text-white rounded-3xl p-10 mb-16 flex flex-col md:flex-row md:items-center md:justify-between space-y-8 md:space-y-0">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        class="bg-[#7ECF82] text-white rounded-3xl p-8 sm:p-10 mb-16 
+        flex flex-col md:flex-row md:items-center md:justify-between 
+        space-y-8 md:space-y-0">
+
+        <div class="max-w-xl">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
             Don’t build another website.
           </h2>
-          <p class="text-lg leading-relaxed">
+          <p class="text-base sm:text-lg leading-relaxed">
             Let your audience buy tickets where they already chat. <br />
             Sell more. Stress less. Impress your fans.
           </p>
         </div>
 
-        <div class="flex space-x-4">
-          <u-button class="bg-white border border-gray-500 text-gray-900 font-medium py-3 px-6 rounded-full shadow">
+        <div class="flex flex-col sm:flex-row gap-4">
+          <u-button
+            class="bg-white border border-gray-400 text-gray-900 font-medium py-3 px-6 rounded-full shadow w-full sm:w-auto">
             Get Started
-          </u-button> 
-          <u-button class="bg-white border border-gray-500 text-gray-900  font-medium py-3 px-6 rounded-full">
+          </u-button>
+
+          <u-button
+            class="bg-white border border-gray-400 text-gray-900 font-medium py-3 px-6 rounded-full w-full sm:w-auto">
             Book a demo
           </u-button>
         </div>
       </div>
 
       <!-- Footer Main Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-gray-600">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-gray-600">
 
         <!-- Logo + Description -->
         <div>
@@ -76,17 +82,19 @@
           </p>
 
           <div class="flex space-x-4 text-xl mt-4">
-            <u-icon name="i-fa6-brands-facebook" />
-            <u-icon name="i-fa6-brands-whatsapp" />
-            <u-icon name="i-fa6-brands-instagram" />
-            <u-icon name="i-fa6-brands-x-twitter" />
-            <u-icon name="i-fa6-brands-linkedin" />
+            <u-icon name="logos:facebook" />
+            <u-icon name="logos:whatsapp-icon" />
+            <u-icon name="skill-icons:instagram" />
+            <u-icon name="devicon:twitter" />
+            <u-icon name="uiw:linkedin" />
           </div>
         </div>
       </div>
 
       <!-- Bottom Links -->
-      <div class="mt-14 flex flex-col sm:flex-row md:justify-end sm:space-x-10 text-sm text-gray-500">
+      <div
+        class="mt-14 flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-10 
+        md:justify-end text-sm text-gray-500">
         <a href="#" class="hover:text-gray-700">Privacy Policy</a>
         <a href="#" class="hover:text-gray-700">Terms & Conditions</a>
         <a href="#" class="hover:text-gray-700">Cookie Policy</a>
