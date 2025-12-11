@@ -4,12 +4,6 @@
       class="bg-linear-to-r from-gray-900/40 to-pink-800/40 rounded-3xl flex px-10 pt-14 hero-animate"
     >
       <div class="w-3/5 space-y-10">
-        <div>
-          <p class="bg-primary inline rounded-full py-2 px-5 text-white">
-            Meet Your Customers Where They Are
-          </p>
-        </div>
-
         <p class="text-7xl text-white font-bold leading-tight">
           Your Customers are on WhatsApp.
           <span class="text-secondary">Are you?</span>

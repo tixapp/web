@@ -65,7 +65,13 @@
         <div>
           <h3 class="font-semibold text-gray-900 mb-4">Company</h3>
           <ul class="space-y-2 text-sm">
-            <li>About Us</li>
+            <li>
+               <NuxtLink
+              to="/about"
+            >
+             About Us
+            </NuxtLink>
+            </li>
             <li>Blog</li>
             <li>Careers</li>
             <li>Help Center</li>

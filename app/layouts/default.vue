@@ -1,7 +1,9 @@
 <template>
   <div class="bg-pink-50">
     <app-header />
-    <slot />
+    <div>
+      <slot />
+    </div>
     <app-footer />
   </div>
 </template>

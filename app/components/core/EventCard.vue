@@ -15,7 +15,7 @@
       </div>
 
       <p class="mt-2 font-semibold text-xs">SLE {{ price }}</p>
-
+u
       <u-button size="xs"
         class="mt-3 bg-white hover:bg-white text-gray-800 rounded-lg py-1.5 w-full text-[10px] font-medium flex justify-center items-center">
         Buy
